@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Wet+Paint&display=swap");
+
+.app {
+  /* Remove default styles by the 1st two below lines */
+  margin: 0;
+  padding: 0;
+  /* Center everything, activates flexbox layout */
+  display: flex;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  height: 100vh;
+  /*container's main axis is oriented vertically, (flex items will be laid in a column format from top to bottom)*/
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.gameboard {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px black;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 15px solid #fbc531;
+  box-sizing: border-box;
+}
+
+.cross {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  background-color: #4cd137;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #192a56;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 60px;
+  color: #00a8ff;
+}
