@@ -1,4 +1,4 @@
-## Tic Tac Toe Game
+# Tic Tac Toe Game
 
 This is fully functional TIC TAC TOE game implemented using React JS, CSS and HTML (JS library) in order to practice the fundamentals of React.
 
